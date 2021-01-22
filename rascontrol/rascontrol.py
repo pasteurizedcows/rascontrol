@@ -21,8 +21,9 @@ SimpleIS = namedtuple('SimpleIS', ['is_id', 'river', 'reach'])
 SimpleLS = namedtuple('SimpleLS', ['ls_id', 'river', 'reach'])
 
 # Codes for RAS output types, used in Node.value()
-WSEL = 2
-BASE_WS = 160 # floodway elevation
+WSEL = 2 # wsel with or without encroachments (if they exist)
+EGEL = 3 # energy gradient elevation
+BASE_WS = 160 # wsel without encroachments
 MIN_CH_EL = 5
 STA_WS_LFT = 36
 STA_WS_RGT = 37
